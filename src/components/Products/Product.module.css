@@ -1,0 +1,40 @@
+.product{
+  padding: 1.5rem;
+  background-color: gainsboro;
+  border-radius: 10px;
+  width: 40rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+}
+.value{
+  background-color: azure;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 500;
+}
+.btn{
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid blueviolet;
+  background-color: transparent;
+  color: blueviolet;
+  cursor: pointer;
+  font-weight: 500;
+}
+.inc{
+  background-color: blueviolet;
+  color: white;
+}
+.hide{
+  display: none;
+}
+.remove{
+  color: tomato;
+  border-color: tomato;
+}

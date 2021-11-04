@@ -1,0 +1,12 @@
+.product-list{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.empty{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: gainsboro;
+}

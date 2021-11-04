@@ -1,0 +1,19 @@
+.navbar{
+    height: 10vh;
+    width: 100%;
+    background-color: violet;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar span{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #c89464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
