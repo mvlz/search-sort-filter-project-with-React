@@ -7,6 +7,7 @@ export const productsData = [
       description: "Sphynx Tie Dye Grey",
       availableSizes: ["X", "L", "XL", "XXL"],
       price: 10,
+      img:"https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3IlMjBkZXNpZ24lMjBsaXZpbmclMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       isFreeShipping: true,
     },
   
@@ -18,6 +19,7 @@ export const productsData = [
       description: "Danger Knife Grey",
       availableSizes: ["X", "M", "L"],
       price: 14.9,
+      img:"https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3IlMjBkZXNpZ24lMjBsaXZpbmclMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       isFreeShipping: true,
     },
   
@@ -29,6 +31,7 @@ export const productsData = [
       description: "White DGK Script",
       availableSizes: ["X", "M", "L"],
       price: 14.9,
+      img:"https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3IlMjBkZXNpZ24lMjBsaXZpbmclMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       isFreeShipping: true,
     },
   
@@ -40,6 +43,7 @@ export const productsData = [
       description: "Born On The Streets",
       availableSizes: ["XL"],
       price: 25.9,
+      img:"https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3IlMjBkZXNpZ24lMjBsaXZpbmclMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       isFreeShipping: false,
     },
   
@@ -51,6 +55,7 @@ export const productsData = [
       description: "Tso 3D Short Sleeve",
       availableSizes: ["X", "L", "XL"],
       price: 10.9,
+      img:"https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3IlMjBkZXNpZ24lMjBsaXZpbmclMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       isFreeShipping: false,
     },
   
@@ -62,6 +67,7 @@ export const productsData = [
       description: "Man Tie Dye Cinza Grey",
       availableSizes: ["XL", "XXL"],
       price: 49.9,
+      img:"https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3IlMjBkZXNpZ24lMjBsaXZpbmclMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       isFreeShipping: false,
     },
   
@@ -74,6 +80,7 @@ export const productsData = [
       availableSizes: ["S"],
       style: "Preto com listras brancas",
       price: 22.5,
+      img:"https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3IlMjBkZXNpZ24lMjBsaXZpbmclMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       isFreeShipping: true,
     },
   
@@ -86,6 +93,7 @@ export const productsData = [
       availableSizes: ["XL"],
       style: "Azul escuro",
       price: 18.7,
+      img:"https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3IlMjBkZXNpZ24lMjBsaXZpbmclMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       isFreeShipping: false,
     },
     {
@@ -96,6 +104,7 @@ export const productsData = [
       description: "",
       availableSizes: ["L", "XL"],
       price: 134.9,
+      img:"https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3IlMjBkZXNpZ24lMjBsaXZpbmclMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       isFreeShipping: true,
     },
   ];

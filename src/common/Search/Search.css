@@ -1,0 +1,8 @@
+.searchBox {
+  width: calc(100% - 2rem);
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 1px solid #eee;
+  padding: 0.25rem 1rem;
+}

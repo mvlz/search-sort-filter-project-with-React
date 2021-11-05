@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useProductsAction } from "../../providers/ProductProvider";
+import './Search.css';
 
 const Search = ({filter}) => {
   const dispatch = useProductsAction();
@@ -12,8 +13,8 @@ const Search = ({filter}) => {
   };
   return (
     <div>
-      <p>search for</p>
-      <input type="text" value={value} onChange={changeHandler} />
+      {/* <p>search for</p> */}
+      <input type="text" value={value} onChange={changeHandler}  className="searchBox"  placeholder="Search your city ..."/>
     </div>
   );
 };

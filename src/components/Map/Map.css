@@ -1,0 +1,8 @@
+.map-content{
+    padding: 0 4rem;
+    border-radius: 1rem;
+}
+.map-content img{
+    border-radius: 1rem;
+    width: 100%;
+}

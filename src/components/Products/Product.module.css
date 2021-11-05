@@ -1,12 +1,14 @@
 .product{
-  padding: 1.5rem;
-  background-color: gainsboro;
+  padding: 2rem;
+  background-color: white;
   border-radius: 10px;
   width: 40rem;
+  height: 12rem;
   display: flex;
   justify-content: start;
-  align-items: center;
-  gap: 3rem;
+  /* align-items: center; */
+  gap: 2rem;
+  box-shadow: 43px 40px 69px -16px #d6d6d6;
 }
 .value{
   background-color: azure;
@@ -37,4 +39,29 @@
 .remove{
   color: tomato;
   border-color: tomato;
+}
+.imgContainer{
+  width: 10rem;
+  height: 100%;
+  background-color: gold;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.productImg{
+  /* min-width: 100%; */
+  height: 100%;
+  object-fit: cover;
+}
+.productInf{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.manageProduct{
+  display: flex;
+  gap: 0.5rem;
+}
+.productPrice{
+  font-size: 1.3rem;
+  font-weight: 400;
 }

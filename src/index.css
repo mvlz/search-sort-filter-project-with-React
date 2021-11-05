@@ -22,3 +22,7 @@ body{
   background-color: #fefefe;
   height: 100vh;
 }
+input{
+  /* border: none; */
+  outline: none;
+}

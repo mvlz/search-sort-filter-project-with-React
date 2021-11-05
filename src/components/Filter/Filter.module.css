@@ -1,10 +1,50 @@
 .filterContainer{
-    width: 43rem;
+    /* width: 40rem; */
     display: flex;
-    gap: 1rem;
-    margin: 1rem auto;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-left: 4rem;
+    /* margin: 1rem 0; */
+    /* justify-content: space-between; */
 }
 .select{
     width: 8rem;
+}
+.selectSort::before{
+    content: '';
+}
+.filtersContainer{
+    display: flex;
+    gap: 1rem;
+}
+.selectt{
+    border: none;
+    outline: none;
+    color: darkgrey;
+    margin: 0 0.2rem;
+}
+.selectt option{
+    background-color: darkmagenta;
+}
+.selectEl{
+    width: 4rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    color: darkgrey;
+    padding: 0.15rem 0.5rem;
+}
+.result{
+    font-size: 1.4rem;
+    font-weight: 400;
+    /* margin: 1rem 0; */
+}
+.extraFeat{
+    display: flex;
+    gap:1rem;
+    align-items: center;
 }
