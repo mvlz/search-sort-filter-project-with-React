@@ -1,0 +1,10 @@
+.filterContainer{
+    width: 43rem;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem auto;
+    justify-content: space-between;
+}
+.select{
+    width: 8rem;
+}
