@@ -1,11 +1,7 @@
 .filterContainer{
-    /* width: 40rem; */
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    padding-left: 4rem;
-    /* margin: 1rem 0; */
-    /* justify-content: space-between; */
+    gap: 1.5rem;
 }
 .select{
     width: 8rem;
@@ -15,7 +11,7 @@
 }
 .filtersContainer{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .selectt{
     border: none;

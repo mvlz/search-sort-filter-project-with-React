@@ -1,14 +1,12 @@
 import { useState } from "react";
-import Select from "react-select";
 import Search from "../../common/Search/Search";
 import SelectComponent from "../../common/Select/Select";
 import {
   useProductsAction,
   useProducts,
 } from "../../providers/ProductProvider";
-import { BiTrash, BiMinus, BiPlus } from "react-icons/bi";
 import style from "./Filter.module.css";
-import { FormGroup, FormControlLabel, Switch } from "@mui/material";
+import { Switch } from "@mui/material";
 
 const Filter = () => {
   const dispatch = useProductsAction();
@@ -23,7 +21,6 @@ const Filter = () => {
     dispatch({ type: "filter", event: selectedOption });
     dispatch({ type: "sort", event: sort });
     setFilter(selectedOption);
-    // console.log(selectedOption);
   };
   const sortHandler = (selectedOption) => {
     setSort(selectedOption);
@@ -31,25 +28,25 @@ const Filter = () => {
   };
   const typeHandler = (selectedOption) => {
     setType(selectedOption);
-    // dispatch({ type: "type", event: selectedOption });
-    console.log("hi");
+    dispatch({ type: "type", event: selectedOption });
   };
   const filterOptions = [
     { value: "", label: "All" },
-    { value: "Xs", label: "Xs" },
-    { value: "S", label: "S" },
-    { value: "M", label: "M" },
-    { value: "L", label: "L" },
-    { value: "XL", label: "XL" },
-    { value: "XXL", label: "XXL" },
+    { value: "beds", label: "beds" },
+    { value: "cabinets", label: "cabinets" },
+    { value: "chairs", label: "chairs" },
+    { value: "clocks", label: "clocks" },
+    { value: "desks", label: "desks" },
+    { value: "tables", label: "tables" },
   ];
   const sortOptions = [
     { value: "highest", label: "highest" },
     { value: "lowest", label: "lowest" },
   ];
   const typeOptions = [
-    { value: "villa", label: "villa" },
-    { value: "apartment", label: "apartment" },
+    { value: "", label: "All" },
+    { value: "second", label: "second hand" },
+    { value: "new", label: "new" },
   ];
 
   return (
@@ -74,7 +71,7 @@ const Filter = () => {
         value={value}
         className={style.select}
       /> */}
-      <Search filter={filter} />
+      <Search filter={filter} type={type}/>
       <div className={style.extraFeat}>
         <h2 className={style.result}>{TotalItems} results</h2>
       <div className={style.mapControl}>
@@ -83,7 +80,8 @@ const Filter = () => {
           // onChange={handleChange}
           defaultChecked 
           inputProps={{ "aria-label": "controlled" }}
-        /> <span>show map</span>
+        /> <span>show map
+        </span>
       </div>
       </div>
       <div className={style.filtersContainer}>
@@ -104,8 +102,8 @@ const Filter = () => {
         title="type"
         options={typeOptions}
         onChange={typeHandler}
-        // value={type}
-        defaultValue={typeOptions[0]}
+        value={type}
+        // defaultValue={typeOptions[1]}
       />
         {/* <label htmlFor="price" className={style.selectEl}>
         <BiTrash/>

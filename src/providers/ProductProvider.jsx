@@ -3,25 +3,6 @@ import {productsData} from "../db/ProductsData"
 import _ from "lodash";
 const ProductsContext = createContext();
 const ProductsContextDispather = createContext();
-// const initialState= [{
-//     title: "JS",
-//     price: "100 $",
-//     id: 1,
-//     quantity: 4,
-//   },
-//   {
-//     title: "React",
-//     price: "90 $",
-//     id: 2,
-//     quantity: 2,
-//   },
-//   {
-//     title: "Css",
-//     price: "80 $",
-//     id: 3,
-//     quantity: 3,
-//   }];
-
 const reducer = (state, action) => {
   switch (action.type) {
     case "remove": {
@@ -42,14 +23,14 @@ const reducer = (state, action) => {
       const decProducts = [...state];
       const decIndex = state.findIndex((p) => p.id === action.id);
       const productt = { ...decProducts[decIndex]};
-      if (productt.quantity === 1) {
-          const filteredProducts = state.filter((p) => p.id !== action.id);
-          return filteredProducts;
-        } else {
+      // if (productt.quantity === 1) {
+      //     const filteredProducts = state.filter((p) => p.id !== action.id);
+      //     return filteredProducts;
+      //   } else {
         productt.quantity--;
         decProducts[decIndex] = productt;
         return decProducts;
-      }
+      // }
     }
 
     case "edit": {
@@ -84,6 +65,14 @@ const reducer = (state, action) => {
       const searchItem = action.event.target.value;
       const searchedProduct = state.filter(p=> p.title.toLowerCase().includes(searchItem))
       return searchedProduct;
+    }
+    case "type":{
+      const value = action.event.value;
+      if(value === ""){
+        return productsData;
+      } else {
+        return productsData.filter(p=> p.type === value);
+      }
     }
 
     default: return state;

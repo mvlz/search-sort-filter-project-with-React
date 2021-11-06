@@ -9,12 +9,13 @@
 }
 .main-content,
 .mapContainer {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 .wrapper {
-  width: 100%;
+  width: calc(100% - 8rem);
   display: flex;
+  padding: 0 4rem;
 }

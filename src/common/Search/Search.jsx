@@ -13,8 +13,7 @@ const Search = ({filter}) => {
   };
   return (
     <div>
-      {/* <p>search for</p> */}
-      <input type="text" value={value} onChange={changeHandler}  className="searchBox"  placeholder="Search your city ..."/>
+      <input type="text" value={value} onChange={changeHandler}  className="searchBox"  placeholder="Search products ..."/>
     </div>
   );
 };

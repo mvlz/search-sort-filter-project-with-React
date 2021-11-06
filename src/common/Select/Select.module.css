@@ -1,16 +1,17 @@
-.selectTag{
-    border: none !important;
-    outline: none;
+.selectTag {
+  border: none !important;
+  outline: none;
+  width: 8rem;
 }
-.selectTitle{
-    /* color: darkmagenta; */
-    color: #999;
+.selectTitle {
+  /* color: darkmagenta; */
+  color: #999;
 }
-.selectContainer{
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
+.selectContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
 }
-.selectContainer Select{
-    border: none !important;
+.selectContainer Select {
+  border: none !important;
 }
