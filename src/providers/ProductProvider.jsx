@@ -48,12 +48,10 @@ const reducer = (state, action) => {
         return productsData;
       } else{
         const updatedProducts = productsData.filter(p => p.availableSizes.indexOf(value) >= 0);
-        // console.log(state)
         return updatedProducts
       }
     }
     case"sort":{
-      // console.log("hi",action.event);
       const value = action.event.value;
       if(value === "highest"){
         return _.orderBy(state,["price"],["desc"])

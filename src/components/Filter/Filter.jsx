@@ -75,13 +75,13 @@ const Filter = () => {
       <div className={style.extraFeat}>
         <h2 className={style.result}>{TotalItems} results</h2>
       <div className={style.mapControl}>
-      <Switch
+      {/* <Switch
           // checked={checked}
           // onChange={handleChange}
           defaultChecked 
           inputProps={{ "aria-label": "controlled" }}
         /> <span>show map
-        </span>
+        </span> */}
       </div>
       </div>
       <div className={style.filtersContainer}>

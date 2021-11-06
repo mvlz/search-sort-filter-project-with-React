@@ -3,6 +3,10 @@
   outline: none;
   width: 8rem;
 }
+/* .selectTag > div{
+  border: none !important;
+  outline: none !important;
+} */
 .selectTitle {
   /* color: darkmagenta; */
   color: #999;

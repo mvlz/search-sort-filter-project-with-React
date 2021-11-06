@@ -10,10 +10,7 @@ const Product = ({ product, onChange, onDel, onDecrement, onIncrement }) => {
       </div>
       <div className={styles.productInf}>
         <h3 className={styles.productName}>{product.title}</h3>
-        <p className={styles.productInc}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-           Quia nihil eius quibusdam
-        </p>
+        <p className={styles.productInc}>{product.description}</p>
         {/* <input
         type="text"
         onChange={onChange}
@@ -53,7 +50,7 @@ const Product = ({ product, onChange, onDel, onDecrement, onIncrement }) => {
           </button> */}
         </div>
         <div className={styles.productFooter}>
-          <p className={styles.productPrice}> €{product.price} </p>
+          <p className={styles.productPrice}> £{product.price}</p>
           {/* <Button variant="contained" startIcon={<BiCartAlt />}>
             buy
           </Button> */}
