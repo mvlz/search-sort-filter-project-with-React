@@ -22,6 +22,7 @@ const ProductList = () => {
                 onIncrement={() => dispatch({type:"increment",id:product.id})}
                 onDecrement={() => dispatch({type:"decrement",id:product.id})}
                 onChange={(e) => dispatch({type:"edit",id:product.id, event: e})}
+                onLike={() => dispatch({type:"like", id: product.id})}
             />
             )
         })

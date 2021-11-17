@@ -1,10 +1,14 @@
 import styles from "./Product.module.css";
 import { BiTrash, BiMinus, BiPlus, BiCartAlt, BiStar } from "react-icons/bi";
-import { Button, IconButton } from "@mui/material";
+import { IconButton} from "@mui/material";
+import { MdFavorite,MdFavoriteBorder } from "react-icons/md";
 
-const Product = ({ product, onChange, onDel, onDecrement, onIncrement }) => {
+const Product = ({ product, onChange, onDel, onDecrement, onIncrement, onLike }) => {
   return (
     <div className={styles.product}>
+      <button onClick={onLike} className={styles.likeBtn}>
+          {product.isLiked ? <MdFavorite  className={styles.likedProduct}/> : <MdFavoriteBorder className={styles.notLiked} animation="spin"></MdFavoriteBorder>}
+        </button>
       <div className={styles.imgContainer}>
         <img className={styles.productImg} src={product.img} />
       </div>

@@ -1,4 +1,4 @@
-.product{
+.product {
   padding: 1rem;
   background-color: white;
   border-radius: 10px;
@@ -8,14 +8,15 @@
   justify-content: start;
   gap: 1rem;
   box-shadow: 43px 40px 69px -16px #d6d6d6;
+  position: relative;
 }
-.value{
+.value {
   background-color: azure;
   padding: 0.25rem 0.5rem;
   border-radius: 3px;
   font-weight: 500;
 }
-.btn{
+.btn {
   width: 1.5rem;
   height: 1.5rem;
   display: flex;
@@ -29,57 +30,81 @@
   font-size: 1rem;
   font-weight: 500;
 }
-.inc{
+.inc {
   background-color: #155ea6;
   color: white;
 }
-.hide{
+.hide {
   display: none;
 }
-.disable{
+.disable {
   color: darkgrey;
   border-color: darkgrey;
 }
-.imgContainer{
+.imgContainer {
   width: 10rem;
   height: 100%;
   border-radius: 0.75rem;
   overflow: hidden;
+  position: relative;
 }
-.productImg{
+.productImg {
   height: 100%;
   object-fit: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.productInf{
+.productInf {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: calc(100% - 12rem);
+  width: calc(100% - 11rem);
 }
-.manageProduct{
+.manageProduct {
   display: flex;
   gap: 0.5rem;
 }
-.productPrice{
+.productPrice {
   font-size: 1.3rem;
   font-weight: 400;
 }
-.productFooter{
+.productFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.productName,.scoreNum{
+.productName,
+.scoreNum {
   font-size: 1rem;
 }
-.productInc{
+.productInc {
   font-size: 0.75rem;
   line-height: 1.1;
 }
-.score{
+.score {
   color: #1976d2;
+}
+.likedProduct {
+  border-radius: 50%;
+  color: #1a77d2;
+}
+.likeBtn {
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.25rem;
+  top: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notLiked {
+  color: rgba(0, 0, 0, 0.527);
 }

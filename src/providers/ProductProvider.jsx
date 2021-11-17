@@ -72,6 +72,14 @@ const reducer = (state, action) => {
         return productsData.filter(p=> p.type === value);
       }
     }
+    case "like":{
+      const productsLike = [...state];
+      const index = state.findIndex((item) => item.id === action.id);
+      const product = { ...productsLike[index]};
+      product.isLiked = !product.isLiked;
+      productsLike[index] = product;
+      return productsLike;
+    }
 
     default: return state;
   }
