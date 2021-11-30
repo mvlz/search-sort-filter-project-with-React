@@ -30,14 +30,7 @@ const Product = ({ product, onChange, onDel, onDecrement, onIncrement, onLike })
           <BiStar />
         </div>
         <div className={styles.manageProduct}>
-          <button
-            className={`${styles.inc} ${styles.btn}`}
-            onClick={onIncrement}
-          >
-            <BiPlus />
-          </button>
 
-          <p className={styles.value}>{product.quantity}</p>
           <button
             className={`${styles.btn} ${
               product.quantity === 1 && styles.disable
@@ -48,7 +41,14 @@ const Product = ({ product, onChange, onDel, onDecrement, onIncrement, onLike })
             {/* {product.quantity > 1 ? <BiMinus /> : <BiTrash />} */}
             <BiMinus />
           </button>
+          <p className={styles.value}>{product.quantity}</p>
 
+          <button
+            className={`${styles.inc} ${styles.btn}`}
+            onClick={onIncrement}
+          >
+            <BiPlus />
+          </button>
           {/* <button className={styles.btn} onClick={onDel}>
             <BiTrash />
           </button> */}

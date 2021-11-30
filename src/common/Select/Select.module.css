@@ -19,3 +19,9 @@
 .selectContainer Select {
   border: none !important;
 }
+@media screen and (max-width: 768.99px) {
+  .selectContainer{
+      width: 100%;
+      justify-content: space-between;
+  }
+}

@@ -47,6 +47,7 @@
   border-radius: 0.75rem;
   overflow: hidden;
   position: relative;
+  box-shadow: 1px 18px 25px -14px #1b283b;
 }
 .productImg {
   height: 100%;
@@ -106,5 +107,26 @@
   align-items: center;
 }
 .notLiked {
-  color: rgba(0, 0, 0, 0.527);
+  color: gainsboro;
+}
+
+@media screen and (max-width: 768.99px) {
+  .likeBtn {
+    right: 1rem;
+  }
+  .productInf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100% ;
+  }
+  .product {
+    flex-direction: column;
+    height: unset;
+    min-height: 12rem;
+  }
+  .imgContainer {
+    max-width: 10rem;
+    height: 10rem;
+  }
 }

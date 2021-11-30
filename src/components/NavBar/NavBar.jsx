@@ -2,13 +2,10 @@ import './NavBar.css';
 import { useProducts ,useProductsAction} from '../../providers/ProductProvider';
 
 const Navbar = () => {
-    const products = useProducts();
-    // const setProducts = useProductsAction();
-    const TotalItems= products.filter((p)=> p.quantity > 0).length;
     return ( 
         <nav className="navbar">
-            <h3>Titleee</h3>
-            {/* <span>{TotalItems}</span> */}
+            <h3>IKEA Store</h3>
+            <a href="https://dribbble.com/shots/15142870-Zoopla-Redesign-Property-Real-estate-search" target="_blank">Design inspiration</a>
         </nav>
      );
 }

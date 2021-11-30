@@ -1,8 +1,8 @@
 .container {
   width: 100%;
   background-color: #f9fafb;
-  /* height: 100vh; */
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -18,4 +18,12 @@
   width: calc(100% - 8rem);
   display: flex;
   padding: 0 4rem;
+}
+
+@media screen and (max-width: 768.99px){
+  .wrapper {
+    width: calc(100% - 2rem);
+    display: flex;
+    padding: 0 1rem;
+  }
 }
