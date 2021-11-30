@@ -6,7 +6,7 @@ import {
   useProducts,
 } from "../../providers/ProductProvider";
 import style from "./Filter.module.css";
-import { Switch } from "@mui/material";
+// import { Switch } from "@mui/material";
 
 const Filter = () => {
   const dispatch = useProductsAction();

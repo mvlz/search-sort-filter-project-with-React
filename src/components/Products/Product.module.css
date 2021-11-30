@@ -5,7 +5,7 @@
   width: 25rem;
   height: 12rem;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 1rem;
   box-shadow: 43px 40px 69px -16px #d6d6d6;
   position: relative;
